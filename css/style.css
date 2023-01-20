@@ -489,14 +489,42 @@ nav a {
 }
 
 /* Arts & Lit Page */
-.arts-pic-size {
-    padding: 5px 5px 5px 5px;
-    width: 400px;
+.art-con-one {
+  width: 100%;
 }
+.art-con-one img {
+  width: 100%;
+}
+.art-con-two {
+  width: 100%;
+}
+.art-con-two img {
+  width: 100%;
+}
+.art-con-three {
+  width: 100%;
+}
+.art-con-three img {
+  width: 100%;
+}
+
 /* Media * Tech Page */
-.memes-pic-size {
-    padding: 5px 5px 5px 5px;
-    width: 400px;
+.tag-one {
+  width: 100%;
+
+  font-size: 1.5rem;
+}
+.tag-one img {
+  width: 100%;
+}
+.tag-two {
+  padding-top: 5rem;
+  width: 100%;
+
+  font-size: 1.5rem;
+}
+.tag-two img {
+  width: 100%;
 }
 
 /* Media Queries */
@@ -544,6 +572,29 @@ nav a {
     }
     .title p {
       display: none;
+    }
+    .art-con-one {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px 10px;
+    }
+    .art-con-one > div:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+    .art-con-two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px 10px;
+    }
+    .tag-one {
+      padding-left: 7rem;
+      padding-right: 7rem;
+      object-fit: cover;
+    }
+    .tag-two {
+      padding-left: 7rem;
+      padding-right: 7rem;
+      object-fit: cover;
     }
 }
 
@@ -684,6 +735,16 @@ nav a {
     .about-description p {
       font-size: 1.5rem;
     }
+    .tag-one {
+      padding-left: 11rem;
+      padding-right: 11rem;
+      object-fit: cover;
+    }
+    .tag-two {
+      padding-left: 11rem;
+      padding-right: 11rem;
+      object-fit: cover;
+    }
 
 }
 
@@ -721,6 +782,16 @@ nav a {
     }
     .album-tres iframe {
       height: 28rem;
+    }
+    .tag-one {
+      padding-left: 15rem;
+      padding-right: 15rem;
+      object-fit: cover;
+    }
+    .tag-two {
+      padding-left: 15rem;
+      padding-right: 15rem;
+      object-fit: cover;
     }
 }
 
